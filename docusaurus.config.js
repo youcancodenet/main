@@ -7,15 +7,15 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://youcancodenet.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/main/',
+  // Updated to your custom domain
+  url: 'https://youcancode.net',
+  
+  // Set to '/' for custom root domains
+  baseUrl: '/',
 
   // GitHub pages deployment config.
-  organizationName: 'youcancodenet', // Your GitHub username
-  projectName: 'main',              // Your repo name
+  organizationName: 'youcancodenet',
+  projectName: 'main',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
