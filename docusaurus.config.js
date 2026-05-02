@@ -52,14 +52,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurus-social-card.jpg',
+      // Manual toggle configuration
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false, // Disables system mode detection
       },
       navbar: {
         title: 'You Can Code',
         logo: {
           alt: 'You Can Code Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.svg', // Reverted to default placeholder as requested
         },
         items: [
           {
