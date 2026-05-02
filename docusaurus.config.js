@@ -74,16 +74,16 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           // Social Icons positioned to the right
           {
-            href: 'https://github.com/youcancodenet/main',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
-          },
-          {
             href: 'https://discordapp.com/invite/docusaurus',
             position: 'right',
             className: 'header-discord-link',
             'aria-label': 'Discord server',
+          },
+          {
+            href: 'https://github.com/youcancodenet/main',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
