@@ -1,0 +1,266 @@
+---
+sidebar_position: 3
+id: artemis-python-flight-manual
+title: Artemis Mission Control — Python Flight Manual
+sidebar_label: Python Flight Manual
+description: Integrated Flight Software Training using Python, structured as mission labs from Pre-Flight to Final Challenge.
+tags:
+  - python
+  - beginner
+  - training
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 🚀 Artemis Mission Control: Python Flight Manual
+
+> **Integrated Flight Software Training**
+
+---
+
+## Pre-Flight: The Universal Signal
+
+Before we launch, we must ensure our communication array is functional. This is a tradition for every engineer on Earth.
+
+:::info Concept Definition: Output
+This is how your program "talks" to you by displaying information on the screen.
+:::
+
+```python title="communication_array.py"
+print("Hello, World!")
+```
+
+---
+
+## Lab 1: Ship Registry
+
+:::info Concept Definition: Variable
+A named container used to store data in the computer's memory. Think of it as a labeled locker on the Space Station.
+:::
+
+**The Mission:** We use the `=` operator to assign a value to a name so we can reference it throughout our code without re-typing the data.
+
+```python title="lab1_ship_registry.py"
+ship_name = "Artemis One"
+print(ship_name)
+```
+
+📖 [W3Schools – Python Variables](https://www.w3schools.com/python/python_variables.asp)
+
+---
+
+## Lab 2: Fuel Gauges
+
+:::info Concept Definition: Data Types (Integers & Floats)
+Numbers without decimals are **Integers**, while those with decimals are **Floats**.
+:::
+
+**The Mission:** Precision is vital for trajectory; Python treats these numbers differently to ensure mission-critical math is exact.
+
+```python title="lab2_fuel_gauges.py"
+fuel_level = 100        # Integer
+oxygen_percent = 98.5   # Float
+print(f"Fuel: {fuel_level}% | Oxygen: {oxygen_percent}%")
+```
+
+---
+
+## Lab 3: Cargo Manifest
+
+:::info Concept Definition: List (Array)
+An ordered collection that allows you to store multiple items in a single variable.
+:::
+
+**The Mission:** Lists use square brackets `[]` and start at index `0`. They are used for managing inventory or crew data.
+
+```python title="lab3_cargo_manifest.py"
+supplies = ["Oxygen", "Water", "Batteries"]
+print(supplies[0])  # Accesses the first item: Oxygen
+```
+
+---
+
+## Lab 4: Safety Checks
+
+:::info Concept Definition: Conditional
+A set of rules that tells the program to make decisions based on whether a statement is `True` or `False`.
+:::
+
+**The Mission:** We use `if` and `else` blocks to handle logic gates, such as checking if fuel is sufficient for takeoff.
+
+```python title="lab4_safety_checks.py"
+fuel = 45
+if fuel > 50:
+    print("Launch sequence initiated.")
+else:
+    print("Hold launch: Low fuel levels.")
+```
+
+---
+
+## Lab 5: The Countdown
+
+:::info Concept Definition: For Loop
+A way to repeat a specific block of code a set number of times in a sequence.
+:::
+
+**The Mission:** Iteration is perfect for time-sensitive sequences like a 5-second countdown to ignition.
+
+```python title="lab5_countdown.py"
+for second in range(5, 0, -1):
+    print(f"{second} seconds to ignition...")
+print("Liftoff!")
+```
+
+---
+
+## Lab 6: Mission Telemetry
+
+:::info Concept Definition: Dictionary
+A collection of `"Key: Value"` pairs. Think of it as a technical manual where you look up a term to find its data.
+:::
+
+**The Mission:** Dictionaries use curly braces `{}` and allow you to quickly retrieve ship stats by their specific name.
+
+```python title="lab6_telemetry.py"
+telemetry = {"Speed": 28000, "Shields": 100}
+print(f"Current Speed: {telemetry['Speed']} km/h")
+```
+
+---
+
+## Lab 7: Auto-Pilot
+
+:::info Concept Definition: Function
+A reusable block of code that only runs when it is "called." Like an "Auto-Pilot" button you can press anytime.
+:::
+
+**The Mission:** Functions start with the `def` keyword and help keep your flight software modular and clean.
+
+```python title="lab7_autopilot.py"
+def check_hull():
+    print("Hull integrity check: 100%. No breaches detected.")
+
+check_hull()  # Pressing the "button" to run the code
+```
+
+---
+
+## Lab 8: Data Slicing
+
+:::info Concept Definition: Slicing
+A method used to extract a specific portion or "slice" of a list or sequence.
+:::
+
+**The Mission:** By using `[start:stop]`, we can isolate specific "windows" of mission data, like the last three sensor logs.
+
+```python title="lab8_data_slicing.py"
+sensor_logs = [10, 22, 35, 48, 55, 62, 70]
+recent_data = sensor_logs[-3:]  # Extracts the last three entries
+print(f"Recent trajectory markers: {recent_data}")
+```
+
+---
+
+## Lab 9: Orbital Persistence
+
+:::info Concept Definition: While Loop
+A loop that repeats indefinitely as long as a specified condition remains `True`.
+:::
+
+**The Mission:** Used for continuous monitoring until a threshold — like stable orbit velocity — is reached.
+
+```python title="lab9_orbital_persistence.py"
+velocity = 25000
+while velocity > 17500:
+    print("Braking thrusters active...")
+    velocity -= 2500
+print("Orbit stabilized.")
+```
+
+---
+
+## Lab 10: Logic Overrides
+
+:::info Concept Definition: Logical Operators
+Keywords (`and`, `or`, `not`) used to combine multiple conditional checks into one decision.
+:::
+
+**The Mission:** This allows for complex safety checks, like ensuring oxygen is nominal and power reserves are above 20%.
+
+```python title="lab10_logic_overrides.py"
+oxygen_ok = True
+power_reserve = 15
+if oxygen_ok and power_reserve > 20:
+    print("Safe for EVA.")
+else:
+    print("EVA Aborted: Check constraints.")
+```
+
+---
+
+## Lab 11: Fault Isolation
+
+:::info Concept Definition: Exception Handling
+A way to prevent a program from "crashing" when an error (exception) occurs.
+:::
+
+**The Mission:** We use `try` and `except` blocks to handle glitches gracefully, keeping the ship's computer online.
+
+```python title="lab11_fault_isolation.py"
+try:
+    navigation_calc = 10 / 0
+except ZeroDivisionError:
+    print("Warning: Navigation glitch detected! Recalibrating...")
+```
+
+---
+
+## Lab 12: Automated Filtering
+
+:::info Concept Definition: List Comprehension
+A concise, shorthand way to create or filter lists in a single line of code.
+:::
+
+**The Mission:** This is an efficient way to process large amounts of sensor data, such as identifying only "hot" temperature zones.
+
+```python title="lab12_automated_filtering.py"
+temps = [22, 25, 18, 32, 21]
+hot_zones = [t for t in temps if t > 25]
+print(f"Alert: High heat in sectors: {hot_zones}")
+```
+
+---
+
+## 🌟 Final Challenge: The Flight Director
+
+Combine everything you've learned:
+
+1. Store ship stats in a **Dictionary**
+2. Create a **Function** that uses **Logical Operators** for a pre-flight check
+3. Use a **For Loop** to countdown
+4. Use an **If/Else** block to confirm ignition
+
+```python title="final_challenge_flight_director.py"
+# 1. Ship stats dictionary
+ship = {"fuel": 80, "oxygen": True, "shields": 95}
+
+# 2. Pre-flight check function
+def pre_flight_check(stats):
+    if stats["oxygen"] and stats["fuel"] > 50 and stats["shields"] > 80:
+        return True
+    return False
+
+# 3. Countdown loop + 4. Ignition check
+if pre_flight_check(ship):
+    for second in range(5, 0, -1):
+        print(f"{second}...")
+    print("🚀 Ignition! Artemis One is go for launch!")
+else:
+    print("❌ Launch aborted. Review ship diagnostics.")
+```
+
+:::tip Mission Complete
+You've completed the Artemis Python Flight Manual. All systems nominal — welcome to the crew, Engineer.
+:::
