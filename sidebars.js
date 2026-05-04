@@ -25,7 +25,7 @@ const sidebars = {
     'hello',
     {
       type: 'category',
-      label: 'Tutorial',
+      label: 'Tutorials',
       items: ['markdown-basics/create-a-document'],
     },
   ],
