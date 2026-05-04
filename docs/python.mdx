@@ -2,7 +2,7 @@
 sidebar_position: 3
 id: python
 title: Artemis Mission Control — Python Flight Manual
-sidebar_label: FREE Python Tutorial
+sidebar_label: FREE Python Course
 description: Integrated Flight Software Training using Python, structured as mission labs from Pre-Flight to Final Challenge.
 tags:
   - python
@@ -13,9 +13,9 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# 🚀 Python Flight Manual
+# 🚀 Artemis Flight Manual
 
-> **Welcome Mission Control! Today, we'll be developing an integrated flight software to launch the Artemis Space Shuttle.**
+> **Welcome, Mission Control! Today we'll be writing code that launches the Artemis Space Shuttle. No experience needed — just follow each lab and you'll be launching rockets in no time. Let's Go!!**
 
 ![artemis_v2](/img/artemis_v2.jpg)
 
@@ -42,27 +42,27 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-## Pre-Flight: The Universal Signal
+## Pre-Flight Checks
 
-Before we launch, we must ensure our communication array is functional. This is a tradition for every engineer on Earth.
+Every mission starts with a simple test — making sure our systems can talk to us. Let's make sure Python is up and running!
 
-:::info Concept Definition: Output
-This is how your program "talks" to you by displaying information on the screen.
+:::info What is Output?
+Output is how your program shows you information. Think of it like a screen on the control panel displaying a message.
 :::
 
 ```python
-print("Hello, World!")
+print("Hello, Houston!")
 ```
 
 ---
 
 ## Lab 1: Ship Registry
 
-:::info Concept Definition: Variable
-A named container used to store data in the computer's memory. Think of it as a labeled locker on the Space Station.
+:::info What is a Variable?
+A variable is like a labeled box where you store information. You give it a name, put something inside, and you can use it whenever you need it.
 :::
 
-**The Mission:** We use the `=` operator to assign a value to a name so we can reference it throughout our code without re-typing the data.
+**The Mission:** We give our ship a name and tell Python to remember it. That way, we can use it anywhere in our program without typing it out every time.
 
 ```python
 ship_name = "Artemis One"
@@ -73,15 +73,15 @@ print(ship_name)
 
 ## Lab 2: Fuel Gauges
 
-:::info Concept Definition: Data Types (Integers & Floats)
-Numbers without decimals are **Integers**, while those with decimals are **Floats**.
+:::info What are Integers & Floats?
+Whole numbers (like `100`) are called Integers. Numbers with a decimal point (like `98.5`) are called Floats. Python uses both for different kinds of measurements.
 :::
 
-**The Mission:** Precision is vital for trajectory; Python treats these numbers differently to ensure mission-critical math is exact.
+**The Mission:** We track our fuel and oxygen levels. Whole numbers work for fuel, but oxygen needs a decimal for more precise readings.
 
 ```python
-fuel_level = 100        # Integer
-oxygen_percent = 98.5   # Float
+fuel_level = 100        # Whole number
+oxygen_percent = 98.5   # Decimal number
 print(f"Fuel: {fuel_level}% | Oxygen: {oxygen_percent}%")
 ```
 
@@ -89,26 +89,26 @@ print(f"Fuel: {fuel_level}% | Oxygen: {oxygen_percent}%")
 
 ## Lab 3: Cargo Manifest
 
-:::info Concept Definition: List (Array)
-An ordered collection that allows you to store multiple items in a single variable.
+:::info What is a List?
+A list lets you store multiple items together in one place. Think of it as a checklist — each item has a number, starting at 0.
 :::
 
-**The Mission:** Lists use square brackets `[]` and start at index `0`. They are used for managing inventory or crew data.
+**The Mission:** We load our supplies into a list so we can keep track of everything on board. We can grab any item by its position number.
 
 ```python
 supplies = ["Oxygen", "Water", "Batteries"]
-print(supplies[0])  # Accesses the first item: Oxygen
+print(supplies[0])  # Grabs the first item: Oxygen
 ```
 
 ---
 
 ## Lab 4: Safety Checks
 
-:::info Concept Definition: Conditional
-A set of rules that tells the program to make decisions based on whether a statement is `True` or `False`.
+:::info What is a Conditional?
+A conditional is a yes/no question your program asks itself. If the answer is yes, it does one thing — if no, it does something else.
 :::
 
-**The Mission:** We use `if` and `else` blocks to handle logic gates, such as checking if fuel is sufficient for takeoff.
+**The Mission:** Before launch, we check if there's enough fuel. If there is, we're a go. If not, we hold the launch.
 
 ```python
 fuel = 45
@@ -122,11 +122,11 @@ else:
 
 ## Lab 5: The Countdown
 
-:::info Concept Definition: For Loop
-A way to repeat a specific block of code a set number of times in a sequence.
+:::info What is a For Loop?
+A for loop repeats the same action a set number of times. It's perfect for anything that needs to count — like a launch countdown!
 :::
 
-**The Mission:** Iteration is perfect for time-sensitive sequences like a 5-second countdown to ignition.
+**The Mission:** We count down from 5 to 1, then trigger liftoff. The loop handles the counting automatically so we don't have to write each number by hand.
 
 ```python
 for second in range(5, 0, -1):
@@ -138,11 +138,11 @@ print("Liftoff!")
 
 ## Lab 6: Mission Telemetry
 
-:::info Concept Definition: Dictionary
-A collection of `"Key: Value"` pairs. Think of it as a technical manual where you look up a term to find its data.
+:::info What is a Dictionary?
+A dictionary stores information in pairs — a name and its value. It's like a contact list: you look up a name and get their number.
 :::
 
-**The Mission:** Dictionaries use curly braces `{}` and allow you to quickly retrieve ship stats by their specific name.
+**The Mission:** We store our ship's speed and shield levels so we can look them up instantly by name during the flight.
 
 ```python
 telemetry = {"Speed": 28000, "Shields": 100}
@@ -153,32 +153,32 @@ print(f"Current Speed: {telemetry['Speed']} km/h")
 
 ## Lab 7: Auto-Pilot
 
-:::info Concept Definition: Function
-A reusable block of code that only runs when it is "called." Like an "Auto-Pilot" button you can press anytime.
+:::info What is a Function?
+A function is a saved set of instructions you can run whenever you want. Like pressing a button — one tap, and it does its job.
 :::
 
-**The Mission:** Functions start with the `def` keyword and help keep your flight software modular and clean.
+**The Mission:** We program an auto-pilot button that runs a hull check whenever we call it. Write it once, use it as many times as you need.
 
 ```python
 def check_hull():
     print("Hull integrity check: 100%. No breaches detected.")
 
-check_hull()  # Pressing the "button" to run the code
+check_hull()  # Press the button to run it
 ```
 
 ---
 
 ## Lab 8: Data Slicing
 
-:::info Concept Definition: Slicing
-A method used to extract a specific portion or "slice" of a list or sequence.
+:::info What is Slicing?
+Slicing lets you grab just a portion of a list — like tearing out only the last few pages of a logbook instead of reading the whole thing.
 :::
 
-**The Mission:** By using `[start:stop]`, we can isolate specific "windows" of mission data, like the last three sensor logs.
+**The Mission:** Our sensors have been logging data the whole flight. We only need the last three readings to check our current trajectory.
 
 ```python
 sensor_logs = [10, 22, 35, 48, 55, 62, 70]
-recent_data = sensor_logs[-3:]  # Extracts the last three entries
+recent_data = sensor_logs[-3:]  # Grabs the last three entries
 print(f"Recent trajectory markers: {recent_data}")
 ```
 
@@ -186,11 +186,11 @@ print(f"Recent trajectory markers: {recent_data}")
 
 ## Lab 9: Orbital Persistence
 
-:::info Concept Definition: While Loop
-A loop that repeats indefinitely as long as a specified condition remains `True`.
+:::info What is a While Loop?
+A while loop keeps repeating as long as something is true. It's great for situations where you don't know exactly how many times you'll need to repeat — like slowing down until you hit the right speed.
 :::
 
-**The Mission:** Used for continuous monitoring until a threshold — like stable orbit velocity — is reached.
+**The Mission:** We fire the braking thrusters over and over until we slow down enough to hold a stable orbit.
 
 ```python
 velocity = 25000
@@ -204,11 +204,11 @@ print("Orbit stabilized.")
 
 ## Lab 10: Logic Overrides
 
-:::info Concept Definition: Logical Operators
-Keywords (`and`, `or`, `not`) used to combine multiple conditional checks into one decision.
+:::info What are Logical Operators?
+Logical operators let you check multiple things at once. `and` means both must be true. `or` means at least one must be true. `not` flips true to false (and vice versa).
 :::
 
-**The Mission:** This allows for complex safety checks, like ensuring oxygen is nominal and power reserves are above 20%.
+**The Mission:** Before sending the crew outside, we check that both oxygen and power are at safe levels. Both conditions must pass or the spacewalk is cancelled.
 
 ```python
 oxygen_ok = True
@@ -223,11 +223,11 @@ else:
 
 ## Lab 11: Fault Isolation
 
-:::info Concept Definition: Exception Handling
-A way to prevent a program from "crashing" when an error (exception) occurs.
+:::info What is Exception Handling?
+Exception handling is a safety net for your program. If something goes wrong, instead of crashing, it catches the problem and lets you handle it gracefully.
 :::
 
-**The Mission:** We use `try` and `except` blocks to handle glitches gracefully, keeping the ship's computer online.
+**The Mission:** A navigation glitch causes a bad calculation. Instead of the whole system crashing, we catch the error and keep the ship running.
 
 ```python
 try:
@@ -240,11 +240,11 @@ except ZeroDivisionError:
 
 ## Lab 12: Automated Filtering
 
-:::info Concept Definition: List Comprehension
-A concise, shorthand way to create or filter lists in a single line of code.
+:::info What is List Comprehension?
+List comprehension is a shortcut for creating a new list based on an existing one. It's a quick way to scan through data and pull out only what you need.
 :::
 
-**The Mission:** This is an efficient way to process large amounts of sensor data, such as identifying only "hot" temperature zones.
+**The Mission:** We scan all temperature readings across the ship and automatically flag any zones running too hot.
 
 ```python
 temps = [22, 25, 18, 32, 21]
@@ -256,7 +256,7 @@ print(f"Alert: High heat in sectors: {hot_zones}")
 
 ## 🌟 Final Challenge: The Flight Director
 
-Combine everything you've learned:
+You've made it to the final mission. Put everything together:
 
 1. Store ship stats in a **Dictionary**
 2. Create a **Function** that uses **Logical Operators** for a pre-flight check
@@ -264,16 +264,16 @@ Combine everything you've learned:
 4. Use an **If/Else** block to confirm ignition
 
 ```python
-# 1. Ship stats dictionary
+# 1. Ship stats
 ship = {"fuel": 80, "oxygen": True, "shields": 95}
 
-# 2. Pre-flight check function
+# 2. Pre-flight check
 def pre_flight_check(stats):
     if stats["oxygen"] and stats["fuel"] > 50 and stats["shields"] > 80:
         return True
     return False
 
-# 3. Countdown loop + 4. Ignition check
+# 3. Countdown + 4. Launch decision
 if pre_flight_check(ship):
     for second in range(5, 0, -1):
         print(f"{second}...")
@@ -283,5 +283,5 @@ else:
 ```
 
 :::tip Mission Complete
-You've completed the Artemis Python Flight Manual. All systems nominal — welcome to the crew, Engineer.
+You've completed the Python Flight Manual. All systems nominal — welcome to the crew, Engineer.
 :::
