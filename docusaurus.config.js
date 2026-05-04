@@ -74,7 +74,7 @@ const config = {
  //         {to: '/blog', label: 'Blog', position: 'left'},
           // Social Icons positioned to the right
           {
-            href: '',
+            href: 'https://discordapp.com/invite/docusaurus',
             position: 'right',
             className: 'header-discord-link',
             'aria-label': 'Discord server',
@@ -103,8 +103,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/youcancodenet/main',
               },
               {
                 label: 'Discord',
@@ -112,19 +112,7 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
- /*             {
-                label: 'Blog',
-                to: '/blog',
-              },*/
-              {
-                label: 'GitHub',
-                href: 'https://github.com/youcancodenet/main',
-              },
-            ],
-          },
+          
         ],
         copyright: `Copyright © ${new Date().getFullYear()} You Can Code. Built with Docusaurus.`,
       },
