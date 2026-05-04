@@ -74,7 +74,7 @@ const config = {
  //         {to: '/blog', label: 'Blog', position: 'left'},
           // Social Icons positioned to the right
           {
-            href: 'https://discordapp.com/invite/docusaurus',
+            href: '',
             position: 'right',
             className: 'header-discord-link',
             'aria-label': 'Discord server',
