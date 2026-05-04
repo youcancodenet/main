@@ -71,7 +71,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+ //         {to: '/blog', label: 'Blog', position: 'left'},
           // Social Icons positioned to the right
           {
             href: 'https://discordapp.com/invite/docusaurus',
@@ -115,10 +115,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
+ /*             {
                 label: 'Blog',
                 to: '/blog',
-              },
+              },*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/youcancodenet/main',
