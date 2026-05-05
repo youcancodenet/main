@@ -26,7 +26,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Tutorials',
-      items: ['docusaurus-basics/create-a-document'],
+      items: ['markdown-basics/create-a-document'],
     },
   ],
    */
