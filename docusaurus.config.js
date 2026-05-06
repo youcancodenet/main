@@ -7,13 +7,9 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  // Updated to your custom domain
   url: 'https://youcancode.net',
-  
-  // Set to '/' for custom root domains
   baseUrl: '/',
 
-  // GitHub pages deployment config.
   organizationName: 'youcancodenet',
   projectName: 'main',
 
@@ -28,12 +24,10 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/youcancodenet/main/tree/main/',
+          editUrl: 'https://github.com/youcancodenet/main/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -48,81 +42,78 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      image: 'img/docusaurus-social-card.jpg',
-      // Manual toggle configuration
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
-        respectPrefersColorScheme: false, // Disables system mode detection
+  themeConfig: ({
+    image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+    navbar: {                              // ✅ properly nested inside themeConfig
+      title: 'You Can Code',
+      logo: {
+        alt: 'You Can Code Logo',
+        src: 'img/logo.svg',
       },
-navbar: {
-        title: 'You Can Code',
-        logo: {
-          alt: 'You Can Code Logo',
-          src: 'img/logo.svg', 
+      items: [                             // ✅ items inside navbar, not floating
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Tutorials',
         },
-// ... inside themeConfig.navbar.items
-items: [
-  {
-    type: 'docSidebar',
-    sidebarId: 'tutorialSidebar',
-    position: 'left',
-    label: 'Tutorials',
-  },
-  {
-    href: 'https://www.stickermule.com/youcancode',
-    label: 'Store',
-    position: 'left',
-  },
-  {
-    href: 'https://discord.gg/KwfnCyp9T',
-    position: 'right',
-    className: 'header-discord-link',
-    'aria-label': 'Discord server',
-  },
-  {
-    href: 'https://github.com/youcancodenet/main',
-    position: 'right',
-    className: 'header-github-link',
-    'aria-label': 'GitHub repository',
-  },
-],      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorials',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/youcancodenet/main',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/KwfnCyp9T',
-              },
-            ],
-          },
-          
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} You Can Code. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+        {
+          href: 'https://www.stickermule.com/youcancode',
+          label: 'Store',
+          position: 'left',
+        },
+        {
+          href: 'https://discord.gg/KwfnCyp9T',
+          position: 'right',
+          className: 'header-discord-link',
+          'aria-label': 'Discord server',
+        },
+        {
+          href: 'https://github.com/youcancodenet/main',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        },
+      ],
+    },                                     // ✅ navbar closed before footer
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Tutorials',
+              to: '/docs/intro',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/youcancodenet/main',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/KwfnCyp9T',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} You Can Code. Built with Docusaurus.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  }),
 };
 
 export default config;
