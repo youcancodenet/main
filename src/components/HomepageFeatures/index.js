@@ -5,7 +5,8 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Fun to Learn',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    // Swapping undraw_docusaurus_mountain.svg for undraw_docusaurus_mountain.png
+    Img: require('@site/static/img/undraw_docusaurus_mountain.png').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -16,7 +17,8 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    // Swapping undraw_docusaurus_tree.svg for undraw_docusaurus_tree.png
+    Img: require('@site/static/img/undraw_docusaurus_tree.png').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -26,7 +28,8 @@ const FeatureList = [
   },
   {
     title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    // Swapping undraw_docusaurus_react.svg for undraw_docusaurus_react.png
+    Img: require('@site/static/img/undraw_docusaurus_react.png').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -36,11 +39,13 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+// Updated component to handle the PNG image source
+function Feature({Img, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {/* Using <img> tag with the existing styles for consistent sizing */}
+        <img src={Img} className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
