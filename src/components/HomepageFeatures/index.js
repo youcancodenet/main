@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
@@ -34,11 +33,12 @@ const FeatureList = [
 
 function Feature({ Img, title, description }) {
   return (
-    <div className={clsx('col col--2', styles.featureCol)}>
+    // ✅ col--2 removed — pure CSS flex controls layout now
+    <div className={styles.featureCard}>
       <div className={styles.featureImgWrap}>
         <img src={Img} alt={title} className={styles.featureImg} loading="lazy" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className={styles.featureText}>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
@@ -49,12 +49,11 @@ function Feature({ Img, title, description }) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className={clsx('row', styles.featureRow)}>
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+      {/* ✅ container and row divs removed — styles.module.css takes full control */}
+      <div className={styles.featureRow}>
+        {FeatureList.map((props, idx) => (
+          <Feature key={idx} {...props} />
+        ))}
       </div>
     </section>
   );

@@ -1,45 +1,62 @@
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
 }
 
 .featureRow {
+  display: flex;                /* ✅ Was missing — nothing laid out correctly */
+  flex-direction: row;
   justify-content: center;
-  gap: 3rem;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.featureCol {
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 420px;
   text-align: center;
-  max-width: 600px;
 }
 
 .featureImgWrap {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .featureImg {
-  width: 550px;
-  height: auto;         /* ✅ No fixed height — image determines its own height */
+  width: 100%;
+  max-width: 500px;     /* ✅ Changed from 380px */
+  height: auto;
   object-fit: contain;
   display: block;
 }
 
+.featureText {
+  width: 100%;
+}
+
 /* Mobile */
 @media (max-width: 996px) {
-  .featureImg {
-    width: 360px;
-    height: auto;       /* ✅ Same on mobile */
-  }
-
   .featureRow {
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
 
-  .featureCol {
+  .featureCard {
     max-width: 100%;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .featureImg {
+    max-width: 360px;
   }
 }
