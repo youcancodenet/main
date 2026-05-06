@@ -4,12 +4,13 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Fun to Learn',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        used to get a website up and running quickly. We use this open-source tool
+        as a way to teach code fundamentals and web development.  
       </>
     ),
   },
