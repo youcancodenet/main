@@ -5,38 +5,37 @@
   width: 100%;
 }
 
-/* ✅ Centers the 3 narrow cols horizontally */
 .featureRow {
   justify-content: center;
-  gap: 3rem;            /* ✅ More breathing room between cards */
+  gap: 3rem;
 }
 
 .featureCol {
   text-align: center;
-  max-width: 260px;     /* ✅ Slightly wider card to fit larger image */
+  max-width: 450px;
 }
 
 .featureImgWrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem; /* ✅ More space between image and title */
+  margin-bottom: 1.5rem;
 }
 
 .featureImg {
-  width: 210px;         /* ✅ 160px * 1.3 = 208px, rounded to 210px */
-  height: 140px;        /* ✅ Maintains 3:2 aspect ratio */
+  width: 400px;
+  height: 267px;
   object-fit: contain;
 }
 
 /* Mobile */
 @media (max-width: 996px) {
   .featureImg {
-    width: 160px;       /* ✅ Mobile: slightly smaller than desktop */
-    height: 107px;
+    width: 360px;       /* ✅ 90% of desktop — nearly full mobile screen width */
+    height: 240px;
   }
 
   .featureRow {
-    gap: 2rem;          /* ✅ Tighter gap when stacked */
+    gap: 2rem;
   }
 
   .featureCol {
