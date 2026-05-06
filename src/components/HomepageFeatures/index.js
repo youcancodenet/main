@@ -1,3 +1,4 @@
+import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -8,7 +9,8 @@ const FeatureList = [
     Img: require('@site/static/img/undraw_docusaurus_mountain.png').default,
     description: (
       <>
-        We use Docusaurus as a tool to teach code fundamentals and web development.
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get a website up and running quickly.
       </>
     ),
   },
@@ -38,6 +40,7 @@ function Feature({Img, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className={styles.featureImgContainer}>
+        {/* The class here handles the 70% and 50% scaling */}
         <img src={Img} className={styles.featureImg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">

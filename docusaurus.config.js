@@ -64,34 +64,32 @@ navbar: {
           alt: 'You Can Code Logo',
           src: 'img/logo.svg', 
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorials',
-          },
-          {
-            href: 'https://www.stickermule.com/youcancode',
-            label: 'Store',
-            position: 'left',
-          },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://discord.gg/KwfnCyp9T',
-            position: 'right',
-            className: 'header-discord-link',
-            'aria-label': 'Discord server',
-          },
-          {
-            href: 'https://github.com/youcancodenet/main',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
-          },
-        ],
-      },
-      footer: {
+// ... inside themeConfig.navbar.items
+items: [
+  {
+    type: 'docSidebar',
+    sidebarId: 'tutorialSidebar',
+    position: 'left',
+    label: 'Tutorials',
+  },
+  {
+    href: 'https://www.stickermule.com/youcancode',
+    label: 'Store',
+    position: 'left',
+  },
+  {
+    href: 'https://discord.gg/KwfnCyp9T',
+    position: 'right',
+    className: 'header-discord-link',
+    'aria-label': 'Discord server',
+  },
+  {
+    href: 'https://github.com/youcancodenet/main',
+    position: 'right',
+    className: 'header-github-link',
+    'aria-label': 'GitHub repository',
+  },
+],      footer: {
         style: 'dark',
         links: [
           {
