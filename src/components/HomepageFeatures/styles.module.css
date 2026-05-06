@@ -12,7 +12,7 @@
 
 .featureCol {
   text-align: center;
-  max-width: 450px;
+  max-width: 600px;     /* ✅ Wider card */
 }
 
 .featureImgWrap {
@@ -22,15 +22,15 @@
 }
 
 .featureImg {
-  width: 400px;
-  height: 267px;
+  width: 550px;         /* ✅ Much larger desktop */
+  height: 367px;        /* ✅ 3:2 aspect ratio */
   object-fit: contain;
 }
 
 /* Mobile */
 @media (max-width: 996px) {
   .featureImg {
-    width: 360px;       /* ✅ 90% of desktop — nearly full mobile screen width */
+    width: 360px;       /* ✅ Mobile unchanged */
     height: 240px;
   }
 
