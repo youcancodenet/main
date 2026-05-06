@@ -3,6 +3,15 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    title: 'Powered by Creativity',
+    Img: require('@site/static/img/undraw_docusaurus_react.png').default,
+    description: (
+      <>
+        Design and customize apps by reusing React. Docusaurus can be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+  {
     title: 'Fun to Learn',
     Img: require('@site/static/img/undraw_docusaurus_mountain.png').default,
     description: (
@@ -12,15 +21,6 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by Creativity',
-    Img: require('@site/static/img/undraw_docusaurus_react.png').default,
-    description: (
-      <>
-        Design and customize apps by reusing React. Docusaurus can be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-    {
     title: 'Focus on What Matters',
     Img: require('@site/static/img/undraw_docusaurus_tree.png').default,
     description: (
