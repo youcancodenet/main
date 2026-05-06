@@ -58,11 +58,11 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: false, // Disables system mode detection
       },
-      navbar: {
+navbar: {
         title: 'You Can Code',
         logo: {
           alt: 'You Can Code Logo',
-          src: 'img/logo.svg', // Reverted to default placeholder as requested
+          src: 'img/logo.svg', 
         },
         items: [
           {
@@ -71,8 +71,12 @@ const config = {
             position: 'left',
             label: 'Tutorials',
           },
- //         {to: '/blog', label: 'Blog', position: 'left'},
-          // Social Icons positioned to the right
+          {
+            href: 'https://www.stickermule.com/youcancode',
+            label: 'Store',
+            position: 'left',
+          },
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://discord.gg/KwfnCyp9T',
             position: 'right',

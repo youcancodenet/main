@@ -67,16 +67,18 @@
 }
 
 .featureSvg {
-  /* Standard Docusaurus layout height */
-  height: 200px;
+  /* Forces a uniform height so the images align on the same horizontal line */
+  height: 230px; 
   width: 100%;
   
-  /* Essential for PNGs to prevent distortion */
-  object-fit: contain;
+  /* Prevents the PNGs from stretching or squashing */
+  object-fit: contain; 
   
-  /* Ensures the image stays centered in its column */
+  /* Adds spacing between the image and the title below it */
+  margin-bottom: 1.5rem; 
+  
+  /* Ensures images are centered within their 4-column grid */
   display: block;
-  margin: 0 auto;
 }
 
 /* --- Mobile Sidebar Layout Fix --- */
