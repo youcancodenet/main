@@ -7,16 +7,7 @@ const FeatureList = [
     Img: require('@site/static/img/undraw_docusaurus_mountain.png').default,
     description: (
       <>
-        We use an open-source tool called Docusaurus to teach code fundamentals and web development.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Img: require('@site/static/img/undraw_docusaurus_tree.png').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory.
+        We use an open-source tool called Docusaurus to teach code fundamentals and web development for students of all ages.
       </>
     ),
   },
@@ -26,6 +17,15 @@ const FeatureList = [
     description: (
       <>
         Design and customize apps by reusing React. Docusaurus can be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+    {
+    title: 'Focus on What Matters',
+    Img: require('@site/static/img/undraw_docusaurus_tree.png').default,
+    description: (
+      <>
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },

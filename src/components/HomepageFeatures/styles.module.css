@@ -4,8 +4,7 @@
 }
 
 .featureRow {
-  display: flex;                /* ✅ Was missing — nothing laid out correctly */
-  flex-direction: row;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
@@ -32,7 +31,7 @@
 
 .featureImg {
   width: 100%;
-  max-width: 400px;     /* ✅ Changed from 380px */
+  max-width: 450px;
   height: auto;
   object-fit: contain;
   display: block;
@@ -42,7 +41,6 @@
   width: 100%;
 }
 
-/* Mobile */
 @media (max-width: 996px) {
   .featureRow {
     flex-direction: column;
@@ -57,6 +55,6 @@
   }
 
   .featureImg {
-    max-width: 360px;
+    max-width: 450px;
   }
 }
