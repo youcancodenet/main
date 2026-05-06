@@ -80,19 +80,19 @@
   align-items: flex-end;
   justify-content: center;
   margin-bottom: 1.5rem;
-  height: 160px;        /* ✅ Desktop: fixed shorter height */
 }
 
 .featureImg {
-  max-height: 100%;
-  width: auto;          /* ✅ Let height drive the scale, not width */
+  height: 160px;        /* ✅ Forces ALL images to exactly this height */
+  width: auto;          /* ✅ Width adjusts naturally to preserve aspect ratio */
   object-fit: contain;
+  display: block;
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-  .featureImgContainer {
-    height: 100px;      /* ✅ Mobile: roughly 50% of desktop */
+@media (max-width: 996px) {   /* 996px matches Docusaurus's mobile breakpoint */
+  .featureImg {
+    height: 100px;      /* ✅ 50% smaller on mobile */
   }
 }
 
