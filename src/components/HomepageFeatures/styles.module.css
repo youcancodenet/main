@@ -5,37 +5,41 @@
   width: 100%;
 }
 
-/* ✅ Centers the 3 col--2 cards horizontally in the 12-col grid */
+/* ✅ Centers the 3 narrow cols horizontally */
 .featureRow {
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;            /* ✅ More breathing room between cards */
 }
 
 .featureCol {
   text-align: center;
-  max-width: 220px;   /* ✅ Hard cap — overrides col--2 if screen is wide */
+  max-width: 260px;     /* ✅ Slightly wider card to fit larger image */
 }
 
 .featureImgWrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; /* ✅ More space between image and title */
 }
 
 .featureImg {
-  width: 160px;       /* ✅ Fixed px — totally immune to grid column width */
-  height: 107px;      /* ✅ Matches 600x400 aspect ratio at this size */
+  width: 210px;         /* ✅ 160px * 1.3 = 208px, rounded to 210px */
+  height: 140px;        /* ✅ Maintains 3:2 aspect ratio */
   object-fit: contain;
 }
 
 /* Mobile */
 @media (max-width: 996px) {
   .featureImg {
-    width: 120px;
-    height: 80px;
+    width: 160px;       /* ✅ Mobile: slightly smaller than desktop */
+    height: 107px;
+  }
+
+  .featureRow {
+    gap: 2rem;          /* ✅ Tighter gap when stacked */
   }
 
   .featureCol {
-    max-width: 100%;  /* ✅ Full width stacked on mobile */
+    max-width: 100%;
   }
 }

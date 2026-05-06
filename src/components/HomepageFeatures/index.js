@@ -38,11 +38,9 @@ const FeatureList = [
 
 function Feature({ Img, title, description }) {
   return (
-    // ✅ col--2 instead of col--4 — each card only takes 2/12 columns
-    // ✅ text--center keeps everything aligned
     <div className={clsx('col col--2', styles.featureCol)}>
       <div className={styles.featureImgWrap}>
-        <img src={Img} alt={title} className={styles.featureImg} />
+        <img src={Img} alt={title} className={styles.featureImg} loading="lazy" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -56,7 +54,6 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        {/* ✅ row--align-center + justifyContent centers the 3 narrow cols */}
         <div className={clsx('row', styles.featureRow)}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
