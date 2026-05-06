@@ -5,7 +5,37 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+/* ✅ Centers the 3 col--2 cards horizontally in the 12-col grid */
+.featureRow {
+  justify-content: center;
+  gap: 2rem;
+}
+
+.featureCol {
+  text-align: center;
+  max-width: 220px;   /* ✅ Hard cap — overrides col--2 if screen is wide */
+}
+
+.featureImgWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.featureImg {
+  width: 160px;       /* ✅ Fixed px — totally immune to grid column width */
+  height: 107px;      /* ✅ Matches 600x400 aspect ratio at this size */
+  object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 996px) {
+  .featureImg {
+    width: 120px;
+    height: 80px;
+  }
+
+  .featureCol {
+    max-width: 100%;  /* ✅ Full width stacked on mobile */
+  }
 }
