@@ -5,12 +5,10 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Fun to Learn',
-    Img: require('@site/static/img/undraw_docusaurus_mountain.png').default,
+    Img: require('@site/static/img/undraw_docusaurus_react.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get a website up and running quickly. We use this open-source
-        tool as a way to teach code fundamentals and web development.
+        Docusaurus was designed from the ground up to be easily installed and used to get a website up and quickly. We use this open-source tool as a way to teach code fundamentals and web development.
       </>
     ),
   },
@@ -19,18 +17,16 @@ const FeatureList = [
     Img: require('@site/static/img/undraw_docusaurus_tree.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores.
-        Go ahead and move your docs into the <code>docs</code> directory.
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Img: require('@site/static/img/undraw_docusaurus_react.png').default,
+    title: 'Powered by Docusaurus',
+    Img: require('@site/static/img/undraw_docusaurus_mountain.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus
-        can be extended while reusing the same header and footer.
+        Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.
       </>
     ),
   },
