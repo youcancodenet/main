@@ -32,7 +32,7 @@
 
 .featureImg {
   width: 100%;
-  max-width: 500px;     /* ✅ Changed from 380px */
+  max-width: 400px;     /* ✅ Changed from 380px */
   height: auto;
   object-fit: contain;
   display: block;
