@@ -4,10 +4,10 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Fun to Learn',
-    Img: require('@site/static/img/undraw_docusaurus_react.png').default,
+    Img: require('@site/static/img/undraw_docusaurus_mountain.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and used to get a website up and quickly. We use this open-source tool as a way to teach code fundamentals and web development.
+        We use an open-source tool called Docusaurus to teach code fundamentals and web development.
       </>
     ),
   },
@@ -21,11 +21,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by Docusaurus',
-    Img: require('@site/static/img/undraw_docusaurus_mountain.png').default,
+    title: 'Powered by Creativity',
+    Img: require('@site/static/img/undraw_docusaurus_react.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.
+        Design and customize apps by reusing React. Docusaurus can be extended while reusing the same header and footer.
       </>
     ),
   },
