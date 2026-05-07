@@ -30,8 +30,8 @@
 }
 
 .featureImg {
-  width: 100%;
-  max-width: 450px;
+  width: 70%;          /* was 100% */
+  max-width: 280px;    /* was 450px */
   height: auto;
   object-fit: contain;
   display: block;
@@ -55,6 +55,7 @@
   }
 
   .featureImg {
-    max-width: 400px;
+    width: 55%;          /* added — was missing, caused full-bleed on mobile */
+    max-width: 260px;    /* was 400px */
   }
 }
