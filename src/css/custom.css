@@ -2,15 +2,15 @@
  * Any CSS included here will be global.
  */
 
-/* Light Mode: Red */
+/* Light Mode: Yellow */
 :root {
-  --ifm-color-primary: #ff0000;
-  --ifm-color-primary-dark: #e60000;
-  --ifm-color-primary-darker: #d90000;
-  --ifm-color-primary-darkest: #b30000;
-  --ifm-color-primary-light: #ff1a1a;
-  --ifm-color-primary-lighter: #ff2626;
-  --ifm-color-primary-lightest: #ff4d4d;
+  --ifm-color-primary: #ffc500;
+  --ifm-color-primary-dark: #e6b100;
+  --ifm-color-primary-darker: #d9a700;
+  --ifm-color-primary-darkest: #b38a00;
+  --ifm-color-primary-light: #ffcb1a;
+  --ifm-color-primary-lighter: #ffce26;
+  --ifm-color-primary-lightest: #ffd74d;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
