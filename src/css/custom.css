@@ -87,3 +87,13 @@
 .navbar-sidebar__items .header-discord-link {
   padding: 12px !important;
 }
+
+/* --- Hero Banner --- */
+
+.hero {
+  background-color: #ffc500 !important;
+}
+
+[data-theme='dark'] .hero__title {
+  color: #ffffff;
+}
