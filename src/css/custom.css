@@ -93,7 +93,3 @@
 .hero {
   background-color: #ffc500 !important;
 }
-
-[data-theme='dark'] .hero__title {
-  color: #ffffff;
-}
