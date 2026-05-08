@@ -14,7 +14,7 @@
 
 ---
 
-## 🚀 Who are you?
+## 🚀 Who are we?
 
 **You Can Code** is a free, beginner-friendly coding education site. We teach coding fundamentals through real-world, story-driven missions — no prior experience required. Whether you're 10 or 40, if you can read this, you can code.
 
@@ -26,7 +26,7 @@ The site is powered by [Docusaurus](https://docusaurus.io/) and lives at **[youc
 
 ### 🐍 Free Python Course — *Artemis Flight Manual*
 
-Strap in, Mission Control. You're about to launch a rocket using nothing but Python.
+Strap in, Mission Control. You're about to launch a rocket using nothing but Python. 👀
 
 This course walks you through **12 hands-on labs + a Final Challenge**, each teaching a core programming concept through a space mission narrative. No experience needed — just follow the labs and you'll be launching rockets in no time. 🦕🚀
 
@@ -53,7 +53,7 @@ This course walks you through **12 hands-on labs + a Final Challenge**, each tea
 
 ### 📖 Docusaurus Tutorials
 
-Learn how to build and customize your own documentation site with Docusaurus — the same tool powering this site!
+Learn how to build and customize your own documentation engine with Docusaurus — the same tool powering this site!
 
 - [Docusaurus - Intro](https://youcancode.net/docs/docusaurus)
 - [Docusaurus - Basics](https://youcancode.net/docs/category/docusaurus---basics)
@@ -63,7 +63,7 @@ Learn how to build and customize your own documentation site with Docusaurus —
 
 ## 🛠️ Contributing
 
-Want to help make coding more accessible? Contributions are welcome! Edit any page directly from the site using the **"Edit this page"** link at the bottom of each doc, which opens the file right here in GitHub.
+Want to help make coding more accessible? Contributions are welcome! Edit any page directly from the site using the **"Edit this page"** link at the bottom of each doc, which opens the file right here in GitHub. (Note: you'll need to join our team for permissions to edit 😉)
 
 ### Local Development
 
@@ -118,6 +118,6 @@ Pushes to the `gh-pages` branch automatically. Easy.
 
 Copyright © 2026 **You Can Code** — Built with 🦕 and [Docusaurus](https://docusaurus.io/)
 
-*__Fact__: T. rex could see in 3D, and in Color, and could definitely see you if you don’t move.*
+*__Fact__: A T. rex could see in 3D, and in Color, and could definitely see you if you don’t move.*
 
 </div>
