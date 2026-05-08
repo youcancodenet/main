@@ -13,7 +13,7 @@ const FeatureList = [
     Img: require("@site/static/img/undraw_docusaurus_react.png").default,
     description: (
       <>
-        Deploy full-featured web applications while gaining marketable skills as a{" "}
+        Deploy fully-featured web applications while gaining marketable skills as a{" "}
         <ExternalLink href="https://www.careerbliss.com/united-states-census-bureau/salaries/developer/">
           code developer
         </ExternalLink>
