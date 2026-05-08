@@ -107,7 +107,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} You Can Code. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} You Can Code.<br> Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
