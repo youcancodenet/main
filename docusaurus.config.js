@@ -111,7 +111,7 @@ const config = {
           items: [
             {
               label: 'Contact Us ✉️',
-              href: 'hardpress.dev@proton.me',
+              href: 'mailto:youcancode@proton.me',
             },
           ],
         },
