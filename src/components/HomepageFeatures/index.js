@@ -17,9 +17,8 @@ const FeatureList = [
     Img: require("@site/static/img/undraw_docusaurus_mountain.png").default,
     description: (
       <>
-        We use a free &ldquo;open-source&rdquo; tool called{" "}
-        <em>Docusaurus</em> to teach code fundamentals for students of all
-        skills and ages.
+        We use an &ldquo;open-source&rdquo; tool called{" "}
+        <code>Docusaurus</code> to teach code fundamentals for students of all ages and skill levels.
       </>
     ),
   },
@@ -28,8 +27,8 @@ const FeatureList = [
     Img: require("@site/static/img/undraw_docusaurus_tree.png").default,
     description: (
       <>
-        Our approach teaches you how to code, not just think about it. Try our{" "}
-        <a href="/docs/python">Python in 5 mins challenge</a> to get started.
+        Our approach teaches you how to code, not just to think about it. Try our{" "}
+        <a href="/docs/python">Python in 5 mins challenge</a> to get started today.
       </>
     ),
   },
