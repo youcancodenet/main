@@ -7,8 +7,8 @@ const FeatureList = [
     Img: require("@site/static/img/undraw_docusaurus_react.png").default,
     description: (
       <>
-        Design and deploy apps completely for free. You will learn to create
-        full-featured web applications while gaining practical code skills.
+        You will learn to design and deploy full-featured web applications
+        while gaining practical code skills for today's workplace.
       </>
     ),
   },
@@ -17,8 +17,9 @@ const FeatureList = [
     Img: require("@site/static/img/undraw_docusaurus_mountain.png").default,
     description: (
       <>
-        We use an &ldquo;open-source&rdquo; tool called{" "}
-        <code>Docusaurus</code> to teach code fundamentals for students of all ages and skill levels.
+        We use a free open-source tool called{" "}
+        <a href="https://docusaurus.io/">Docusaurus</a> to teach code
+        fundamentals for all ages and skill levels.
       </>
     ),
   },
