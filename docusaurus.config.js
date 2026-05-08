@@ -106,6 +106,15 @@ const config = {
             },
           ],
         },
+        {
+          title: 'Information',
+          items: [
+            {
+              label: 'Contact Us',
+              href: 'hardpress.dev@proton.me',
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} You Can Code.<br> Built with Docusaurus.`,
     },
