@@ -118,6 +118,6 @@ Pushes to the `gh-pages` branch automatically. Easy.
 
 Copyright © 2026 **You Can Code** — Built with 🦕 and [Docusaurus](https://docusaurus.io/)
 
-*__Fact__: A T. rex could see in 3D, and in Color, and could definitely see you if you don’t move.*
+*__Fact__: T. rex could see in 3D, and in Color, and could definitely see you if you don’t move.*
 
 </div>
