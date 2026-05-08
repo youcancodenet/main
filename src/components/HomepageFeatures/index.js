@@ -27,9 +27,9 @@ const FeatureList = [
     Img: require("@site/static/img/undraw_docusaurus_mountain.png").default,
     description: (
       <>
-        We use a free open-source tool called{" "}
+        We use a free <code>open-source</code> tool called{" "}
         <ExternalLink href="https://docusaurus.io/">Docusaurus</ExternalLink> to
-        teach code fundamentals for all ages and skill levels.
+        teach code fundamentals for students of all ages and skill levels.
       </>
     ),
   },
