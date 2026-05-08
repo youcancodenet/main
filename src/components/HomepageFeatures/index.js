@@ -38,7 +38,7 @@ const FeatureList = [
     description: (
       <>
         Our approach teaches you how to code, not just think about it. Try
-        the <a href="/docs/python">Learn Python in 5 mins challenge</a>.
+        the <a href="/docs/python">Python in 5 mins</a> challenge.
       </>
     ),
   },
