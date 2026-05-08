@@ -10,7 +10,7 @@
 [![Discord](https://img.shields.io/badge/💬%20Discord-Join%20the%20Crew-7289DA?style=for-the-badge)](https://discord.gg/KwfnCyp9T)
 [![Store](https://img.shields.io/badge/🛒%20Store-Grab%20Stickers-FF6B35?style=for-the-badge)](https://www.stickermule.com/youcancode?sortType=NEWEST)
 
-> **"Don't go extinct."** — *The You Can Code team, probably*
+> **"Don't go extinct."** — *The 'You Can Code' team, probably*
 
 </div>
 
