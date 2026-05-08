@@ -1,31 +1,35 @@
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: 'Powered by Creativity',
-    Img: require('@site/static/img/undraw_docusaurus_react.png').default,
+    title: "Powered by Creativity",
+    Img: require("@site/static/img/undraw_docusaurus_react.png").default,
     description: (
       <>
-        Design and customize apps by reusing React. Docusaurus can be extended while reusing the same header and footer.
+        Design and deploy apps completely for free. You will learn to create
+        full-featured web applications while gaining practical code skills.
       </>
     ),
   },
   {
-    title: 'Fun to Learn',
-    Img: require('@site/static/img/undraw_docusaurus_mountain.png').default,
+    title: "Fun to Learn",
+    Img: require("@site/static/img/undraw_docusaurus_mountain.png").default,
     description: (
       <>
-        We use an open-source tool called Docusaurus to teach code fundamentals and web development for students of all ages.
+        We use a free &ldquo;open-source&rdquo; tool called{" "}
+        <em>Docusaurus</em> to teach code fundamentals for students of all
+        skills and ages.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Img: require('@site/static/img/undraw_docusaurus_tree.png').default,
+    title: "Focus on What Matters",
+    Img: require("@site/static/img/undraw_docusaurus_tree.png").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory.
+        Our approach teaches you how to code, not just think about it. Try our{" "}
+        <a href="/docs/python">Python in 5 mins challenge</a> to get started.
       </>
     ),
   },
@@ -36,7 +40,12 @@ function Feature({ Img, title, description }) {
     // ✅ col--2 removed — pure CSS flex controls layout now
     <div className={styles.featureCard}>
       <div className={styles.featureImgWrap}>
-        <img src={Img} alt={title} className={styles.featureImg} loading="lazy" />
+        <img
+          src={Img}
+          alt={title}
+          className={styles.featureImg}
+          loading="lazy"
+        />
       </div>
       <div className={styles.featureText}>
         <Heading as="h3">{title}</Heading>
