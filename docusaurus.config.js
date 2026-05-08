@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'You Can Code',
-  tagline: 'Code learning for all ages.',
+  tagline: 'Don't be extinct.',
   favicon: 'img/favicon.ico',
 
   url: 'https://youcancode.net',
