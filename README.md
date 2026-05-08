@@ -2,7 +2,7 @@
 
 <img src="static/img/logo.svg" alt="You Can Code Dino" width="120" />
 
-# 🦕 You Can Code
+# You Can Code
 
 ### *Code fundamentals for all skill types and ages.*
 
