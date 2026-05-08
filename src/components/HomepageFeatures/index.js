@@ -1,6 +1,12 @@
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 
+const ExternalLink = ({ href, children }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    {children}
+  </a>
+);
+
 const FeatureList = [
   {
     title: "Powered by Creativity",
@@ -9,9 +15,9 @@ const FeatureList = [
       <>
         You will learn to deploy full-featured web applications while gaining
         practical skills as a{" "}
-        <a href="https://www.careerbliss.com/united-states-census-bureau/salaries/developer/">
+        <ExternalLink href="https://www.careerbliss.com/united-states-census-bureau/salaries/developer/">
           code developer
-        </a>
+        </ExternalLink>
         .
       </>
     ),
@@ -22,8 +28,8 @@ const FeatureList = [
     description: (
       <>
         We use a free open-source tool called{" "}
-        <a href="https://docusaurus.io/">Docusaurus</a> to teach code
-        fundamentals for all ages and skill levels.
+        <ExternalLink href="https://docusaurus.io/">Docusaurus</ExternalLink> to
+        teach code fundamentals for all ages and skill levels.
       </>
     ),
   },
