@@ -14,7 +14,7 @@
 
 ---
 
-## 🚀 Who are we?
+## 💡 Who are we?
 
 **You Can Code** is a free, beginner-friendly coding education site. We teach coding fundamentals through real-world, story-driven missions — no prior experience required. Whether you're 10 or 40, if you can read this, you can code.
 
@@ -32,7 +32,7 @@ This course walks you through **12 hands-on labs + a Final Challenge**, each tea
 
 | # | Lab | Concept |
 |---|-----|---------|
-| 🛸 | Pre-Flight Checks | Output (`print`) |
+| 📋 | Pre-Flight Checks | Output (`print`) |
 | 1 | Ship Registry | Variables |
 | 2 | Fuel Gauges | Integers & Floats |
 | 3 | Cargo Manifest | Lists |
