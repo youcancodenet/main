@@ -7,8 +7,12 @@ const FeatureList = [
     Img: require("@site/static/img/undraw_docusaurus_react.png").default,
     description: (
       <>
-        You will learn to design and deploy full-featured web applications
-        while gaining practical code skills for today's workplace.
+        You will learn to deploy full-featured web applications while gaining
+        practical skills as a{" "}
+        <a href="https://www.careerbliss.com/united-states-census-bureau/salaries/developer/">
+          code developer
+        </a>
+        .
       </>
     ),
   },
@@ -28,8 +32,9 @@ const FeatureList = [
     Img: require("@site/static/img/undraw_docusaurus_tree.png").default,
     description: (
       <>
-        Our approach teaches you how to code, not just to think about it. Try our{" "}
-        <a href="/docs/python">Python in 5 mins challenge</a> to get started today.
+        Our approach teaches you how to code, not just to think about it. Try
+        our <a href="/docs/python">Python in 5 mins challenge</a> to get
+        started today.
       </>
     ),
   },
