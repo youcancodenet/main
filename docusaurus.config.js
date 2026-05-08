@@ -110,7 +110,7 @@ const config = {
           title: 'Information',
           items: [
             {
-              label: 'Contact Us ✉️',
+              label: 'Contact Us',
               href: 'mailto:youcancode@proton.me',
             },
           ],
