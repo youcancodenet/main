@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="For all skill types and ages.">
+      description="Code learning for all ages.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
