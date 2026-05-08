@@ -63,7 +63,7 @@ const config = {
           label: 'Tutorials',
         },
         {
-          href: 'https://www.stickermule.com/youcancode',
+          href: 'https://www.stickermule.com/youcancode?sortType=NEWEST',
           label: 'Store',
           position: 'left',
         },
