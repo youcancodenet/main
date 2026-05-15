@@ -57,8 +57,8 @@ const config = {
       },
       items: [                             // ✅ items inside navbar, not floating
         {
-          type: 'docSidebar',
-          sidebarId: 'intro',
+          type: 'doc',
+          docId: 'intro',
           position: 'left',
           label: 'Tutorials',
         },
